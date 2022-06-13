@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/welcome.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Welcome to AR MUSIC</title>
 </head>
+
 <body>
-    <a href="/music">Play</a>
+    <section class="menu container mx-auto py-8">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-3xl md:text-8xl text-red-200 font-bold">Welcome to AR JS MUSIC</h1>
+            <a href="/music">
+                <button class="btn-primary px-6 py-2 rounded-full text-red-200 font-bold mt-4">PLAY</button>
+            </a>
+        </div>
+        <div class="container mx-auto mt-20 flex items-center justify-between">
+            <img width="200px" id="drums" src="/assets/drums.png">
+			<img width="200px" id="guitar" src="/assets/guitar.png">
+			<img width="200px" id="mic" src="/assets/mic.png">
+			<img width="200px" id="piano" src="/assets/piano.png">
+        </div>
+        <div class="container mx-auto mt-20 flex items-center justify-between">
+            <img width="200px" id="marker0" src="/assets/marker0.png">
+			<img width="200px" id="marker1" src="/assets/marker1.png">
+			<img width="200px" id="marker2" src="/assets/marker2.png">
+			<img width="200px" id="marker3" src="/assets/marker3.png">
+        </div>
+    </section>
+    <script>
+        var song = new Howl({
+            src: ['/audio/song.mp3']
+        });
+        window.onload = function () {
+            song.play()
+        }
+    </script>
 </body>
+
 </html>
