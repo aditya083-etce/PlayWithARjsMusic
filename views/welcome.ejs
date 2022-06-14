@@ -20,25 +20,32 @@
 
 <body>
     <section class="menu container mx-auto py-8">
-        <div class="container mx-auto flex items-center justify-between">
-            <h1 class="text-3xl md:text-8xl text-red-200 font-bold">Welcome to AR JS MUSIC</h1>
+        <div class="container mx-auto md:px-8 px-6 flex items-center justify-between">
+            <h1 class="text-6xl md:text-8xl text-red-200 font-bold">Welcome to AR JS MUSIC</h1>
             <a href="/music">
                 <button class="btn-primary px-6 py-2 rounded-full text-red-200 font-bold mt-4">PLAY</button>
             </a>
         </div>
-        <div class="container mx-auto mt-20 flex items-center justify-between">
-            <img width="200px" id="drums" src="/assets/drums.png">
-			<img width="200px" id="guitar" src="/assets/guitar.png">
-			<img width="200px" id="mic" src="/assets/mic.png">
-			<img width="200px" id="piano" src="/assets/piano.png">
+        <div class="container m-20 grid md:grid-cols-2 lg:grid-cols-4 gap-20">
+            <div class="container flex-col items-center space-y-20">
+                <img width="250px" id="drums" src="/assets/drums.png">
+                <img width="250px" id="marker0" src="/assets/marker0.png">
+            </div>
+            <div class="container flex-col items-center space-y-20">
+                <img width="250px" id="drums" src="/assets/guitar.png">
+                <img width="250px" id="marker0" src="/assets/marker1.png">
+            </div>
+            <div class="container flex-col items-center space-y-20">
+                <img width="250px" id="drums" src="/assets/mic.png">
+                <img width="250px" id="marker0" src="/assets/marker2.png">
+            </div>
+            <div class="container flex-col items-center space-y-20">
+                <img width="250px" id="drums" src="/assets/piano.png">
+                <img width="250px" id="marker0" src="/assets/marker3.png">
+            </div>
         </div>
-        <div class="container mx-auto mt-20 flex items-center justify-between">
-            <img width="200px" id="marker0" src="/assets/marker0.png">
-			<img width="200px" id="marker1" src="/assets/marker1.png">
-			<img width="200px" id="marker2" src="/assets/marker2.png">
-			<img width="200px" id="marker3" src="/assets/marker3.png">
-        </div>
-        <div class="container mx-80 mt-20 flex-col items-center justify-between">
+
+        <div class="container m-20 px-20 flex-col items-center justify-between">
             <h3 class="text-xl text-red-200 font-bold">Download Markers</h3>
             <a class="text-6xl text-red-200 font-bold" href="/assets/Markers_0-4.pdf"><i class="las la-file-download"></i></a>
         </div>
